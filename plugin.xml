@@ -15,16 +15,18 @@
 	<description>iOS Native ActionSheet for use with Appgyver Steroids</description>
 	
 	<author>Original Author: Olivier Louvignes</author>
+	
+	<license>MIT License</license>
 
 	<asset src="www/ActionSheet.js" target="ActionSheet.js" />
 
-	<!-- ios -->
 	<platform name="ios">
-		<plugins-plist key="ActionSheet" />
+		<plugins-plist key="ActionSheet" string="CDVActionSheet" />
 
-		<header-file src="ActionSheet.h" />
+		<header-file src="src/ios/ActionSheet.h" />
 
-		<source-file src="ActionSheet.m" />
+		<source-file src="src/ios/ActionSheet.m" />
+			
 	</platform>
 
 </plugin>
