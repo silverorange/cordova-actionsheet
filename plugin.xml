@@ -5,14 +5,16 @@
 	version="1.0.0">
 	
 	<engines>
-	    <engine name="cordova" version=">=1.7.0" />
-	    <engine name="cordova" version=">=1.8.1" />
-	    <engine name="worklight" version=">=1.0.0" />
+	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
 
 	<name>ActionSheet</name>
 	
 	<description>iOS Native ActionSheet for use with Appgyver Steroids</description>
+	
+	<js-module src="www/actionsheet.js" name="ActionSheet">
+	        <clobbers target="cordova.plugins.actionSheet" />
+	</js-module>
 	
 	<author>Original Author: Olivier Louvignes</author>
 	
@@ -21,6 +23,12 @@
 	<asset src="www/ActionSheet.js" target="ActionSheet.js" />
 
 	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+	            <feature name="ActionSheet">
+	                <param name="ios-package" value="CDVActionSheet" />
+	            </feature>
+	        </config-file>
+	
 		<plugins-plist key="ActionSheet" string="CDVActionSheet" />
 
 		<header-file src="src/ios/ActionSheet.h" />
