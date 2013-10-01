@@ -1,7 +1,10 @@
 # Cordova ActionSheet Plugin #
 by [Olivier Louvignes](http://olouv.com)
+Modified by [Kirk Morales](http://www.kirkmorales.com)
 
 ## DESCRIPTION ##
+
+* Modified plugin.xml to be cordova plugman compatible
 
 * This plugin provides a simple way to use the `UIActionSheet` native component from iOS.
 
