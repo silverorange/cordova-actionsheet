@@ -25,7 +25,7 @@
 	<platform name="ios">
 		<config-file target="config.xml" parent="/*">
 	            <feature name="ActionSheet">
-	                <param name="ios-package" value="CDVActionSheet" />
+	                <param name="ios-package" value="ActionSheet" />
 	            </feature>
 	        </config-file>
 	
